@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Завдання від PortaOne</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section class="wrapper">
+            <h2>Завантажте файл .txt із числами для аналізу</h2>
+            <h5 class="attribution">coded by: Смирнов О.В. як тестове завдання на стажування в PortaOne<br><br><br>Як користуватися програмою?<br> Просто завантажте файл (наприклад, той же "10m", який був прикріплений<br> до тестового завдання). Далі все відбудеться автоматично</p>
+            <div class="processDiv">
+                <button id="fileButton" onclick="document.getElementById('fileInput').click()">Натисніть сюди, щоб завантажити файл</button>
+                <input type="file" id="fileInput" accept=".txt" />
+                <span id="filespan">Тут поки що нічого немає<span>
+            </div>
+            <span id="loaderspan">Обробка</span>
+            <div id="loader" class="loader8"></div>
+            <button id="reloadButton" onClick="window.location.reload();">Для роботи з іншим файлом натисніть сюди ↻</button>
+            <div class="comments" id="comments">
+                <p id="maximum">
+                Найбільше число: 
+                <span id="maximumSpan"></span>
+                </p>
+                <p id="minimum">
+                Найменше число:
+                <span id="minimumSpan"></span>
+                </p>
+                <p id="median">
+                Медіана:
+                <span id="medianSpan"></span>
+                </p>
+                <p id="mean">
+                    Середнє арифметичне:
+                <span id="meanSpan"></span>
+                </p>
+                <p id="increasing">
+                    Найбільша зростаюча послідовність чисел:
+                <span id="increasingSpan"></span>
+                </p>
+                <p id="decreasing">
+                    Найбільша спадна послідовність чисел:
+                <span id="decreasingSpan"></span>
+                </p> 
+            </div>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
